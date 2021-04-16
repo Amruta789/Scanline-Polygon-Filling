@@ -20,7 +20,7 @@ int main(int argc, char** argv)
     int mode=GLUT_RGB|GLUT_SINGLE;
     glutInit(&argc, argv);
     glutInitDisplayMode(mode);
-    glutInitWindowSize(640, 480);
+    glutInitWindowSize(windowWidth, windowHeight);
     glutInitWindowPosition(100, 150);
     glutCreateWindow("Scanline polygon filling");
     myInit();

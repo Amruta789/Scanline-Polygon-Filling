@@ -1,7 +1,7 @@
 #include "myheader.h"
 using namespace std;
 // Store an edge in Global Edge Table
-void storeEdge(EdgeTable GlobalEdgeTable[640], int x1,int y1, int x2, int y2){
+void storeEdge(EdgeTable GlobalEdgeTable[windowWidth], int x1,int y1, int x2, int y2){
     // horizontal lines are not stored in edge table
     struct Edge ed;
     if (y2==y1)

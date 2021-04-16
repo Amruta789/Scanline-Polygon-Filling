@@ -7,8 +7,8 @@ using namespace std;
 
 void myInit(void)
 {
-  //glClearColor(1.0,1.0,1.0,0.0);
-  // // set white background color
+  // glClearColor(1.0,1.0,1.0,0.0);
+  // set white background color
   // glColor3f(0.0f, 0.0f, 0.0f);
   // set the drawing color
   //glPointSize(4.0);

@@ -1,12 +1,12 @@
 #include "myheader.h"
 using namespace std;
-void ScanlineFill(EdgeTable GlobalEdgeTable[640],float red, float green, float blue)
+void ScanlineFill(EdgeTable GlobalEdgeTable[windowWidth],float red, float green, float blue)
 {
     int index, x1, ymax1, x2, ymax2, FillFlag = 0, coordCount;
     struct EdgeTable activerow;
     activerow.countEdgeBucket=0;
     //cout << "The max height is " << maxheight << endl;
-    for (int y=0; y<=maxheight; y++){
+    for (int y=0; y<maxheight; y++){
       // if GlobalEdgeTable[y] has edges greater than zero
       for(int j=0; j<GlobalEdgeTable[y].countEdgeBucket; j++){
         // Add each edge to the active edge table
@@ -86,7 +86,7 @@ void ScanlineFill(EdgeTable GlobalEdgeTable[640],float red, float green, float b
                   glVertex2i(x2,y);
                   glEnd();
                   glFlush();
-                  printf("Line drawn from %d,%d to %d,%d\n",x1,y,x2,y);
+                  // printf("Line drawn from %d,%d to %d,%d\n",x1,y,x2,y);
               }
           }
           index++;

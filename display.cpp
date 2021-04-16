@@ -7,7 +7,7 @@ void display(){
   // For each polygon in pol
   for(int i=0, j=0; i < pol.polygonsnumber; i++){
       // Create a global edge table and initialize count of edges for each ymin index as zero.
-      struct EdgeTable GlobalEdgeTable[640];
+      struct EdgeTable GlobalEdgeTable[windowWidth];
       for(int l=0; l<maxheight; l++){
         GlobalEdgeTable[l].countEdgeBucket=0;
       }
