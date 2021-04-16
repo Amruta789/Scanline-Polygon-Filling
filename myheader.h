@@ -1,6 +1,7 @@
 #ifndef MYHEADER_H
 #define MYHEADER_H
-
+#define windowWidth 640
+#define windowHeight 480
 #include<bits/stdc++.h>
 #include<GL/glut.h>
 
@@ -42,9 +43,9 @@ void parsePolygons(std::string filename);
 // Draws the polygons, reads all vertices to edges, and fills the polgons.
 void display(void);
 // Stores an edge given as input into the global edge table.
-void storeEdge(EdgeTable GlobalEdgeTable[640],int x1,int y1, int x2, int y2);
+void storeEdge(EdgeTable GlobalEdgeTable[windowWidth],int x1,int y1, int x2, int y2);
 // Fills the polygon with the given color
-void ScanlineFill(EdgeTable GlobalEdgeTable[640], float red, float green, float blue);
+void ScanlineFill(EdgeTable GlobalEdgeTable[windowWidth], float red, float green, float blue);
 // Does insertion sort on an active edge table row, sorts according to xofymin
 void insertionSort(EdgeTable *activerow);
 // Removes edges from the active edge table whose ymax <= y.
@@ -52,6 +53,6 @@ void removeEdgeByYmax(EdgeTable *activerow,int y);
 // Prints all edges in the active edge table.
 void printActiveEdgeTable(EdgeTable *activerow);
 // Prints all edges in the global edge table.
-void printAllEdges(EdgeTable GlobalEdgeTable[640]);
+void printAllEdges(EdgeTable GlobalEdgeTable[windowWidth]);
 
 #endif

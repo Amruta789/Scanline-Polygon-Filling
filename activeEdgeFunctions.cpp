@@ -74,7 +74,7 @@ void printActiveEdgeTable(EdgeTable *activerow){
   }
 }
 
-void printAllEdges(EdgeTable GlobalEdgeTable[640]){
+void printAllEdges(EdgeTable GlobalEdgeTable[windowWidth]){
   int i, count=0;
   for (i=0;i<maxheight; i++){
     // cout << endl;
