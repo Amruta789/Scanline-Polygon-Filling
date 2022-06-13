@@ -5,7 +5,8 @@ The input is a file containing the following format.
 #no.ofvertices  red green blue
 #x-coordinate y-coordinate
 ```
-Multiple polygons can be given with a new line separating each polygon specification. \\
+Multiple polygons can be given with a new line separating each polygon specification. \
+\
 The basic idea of the algorithm is to draw horizontal lines from the bottom to the top within the borders of each polygon, filling it with that color.
 Simply put, the algorithm is as follows:
 1. Draw the polygons using `GL_LINE_LOOP` in OpenGL.
